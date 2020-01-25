@@ -37,6 +37,16 @@
 
 
 
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/text"
+        android:hint="Enter Number 2"
+        android:id="@+id/number2_text"
+        android:textAlignment="center" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,6 +60,7 @@
             android:text="+"
             android:layout_marginLeft="20dp"
             android:textColor="#ffffff"
+            android:onClick="add"
             android:id="@+id/add_button"/>
         <Button
             android:layout_width="0dp"
@@ -58,6 +69,7 @@
             android:background="@color/ButtonCo"
             android:text="-"
             android:layout_marginLeft="10dp"
+            android:onClick="subtraction"
             android:textColor="#ffffff"
             android:id="@+id/substraction_button"/>
         <Button
@@ -67,6 +79,7 @@
             android:id="@+id/multiply_button"
             android:background="@color/ButtonCo"
             android:text="*"
+            android:onClick="multiplication"
             android:layout_marginLeft="10dp"
             android:textColor="#ffffff"/>
         <Button
@@ -78,29 +91,13 @@
             android:layout_marginLeft="10dp"
             android:id="@+id/dev_button"
             android:layout_marginRight="20dp"
-            android:textColor="#ffffff"/>
+            android:textColor="#ffffff"
+            android:onClick="divide"/>
 
     </LinearLayout>
 
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="20dp"
-        android:background="@drawable/text"
-        android:hint="Enter Number 2"
-        android:id="@+id/number2_text"
-        android:textAlignment="center" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/ButtonCo"
-        android:text="="
-        android:layout_gravity="end"
-        android:id="@+id/equal_button"
-        android:layout_marginRight="20dp"
-        android:textColor="#ffffff"/>
 
     <TextView
         android:layout_width="match_parent"
